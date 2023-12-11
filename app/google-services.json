@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "348256069406",
+    "firebase_url": "https://edc-app-48a24-default-rtdb.firebaseio.com",
+    "project_id": "edc-app-48a24",
+    "storage_bucket": "edc-app-48a24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348256069406:android:5bcde494b994a795074b0f",
+        "android_client_info": {
+          "package_name": "com.event.edc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA16PTFVtYVtrai7tkCSbuSrNscrUk0tP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
