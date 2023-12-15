@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignupActivity"
-    android:background="@drawable/dips_edc2">
+    android:background="@drawable/bg_shape">
 
     <EditText
         android:id="@+id/editTextEmailSignup"

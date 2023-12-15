@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/dips_edc">
+    android:background="@drawable/bg_shape">
 
     <Button
         android:id="@+id/button"

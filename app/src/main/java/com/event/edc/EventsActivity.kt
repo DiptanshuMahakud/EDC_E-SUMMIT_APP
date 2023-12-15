@@ -16,24 +16,24 @@ class EventsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_events)
+        setContentView(R.layout.events)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+       /** val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         supportActionBar?.title = "My App Title"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)**/
 
     }
 
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    /**override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         menuInflater.inflate(R.menu.app_menu, menu)
         return true
-    }
+    }**/
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+    /**override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.SignoutUserFromMenu)
         {
             FirebaseAuth.getInstance().signOut()
@@ -41,7 +41,7 @@ class EventsActivity : AppCompatActivity() {
             finish()
         }
         return super.onOptionsItemSelected(item)
-    }
+    }**/
 
 
 }

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EDC</string>
+    <string name="upcoming_ev">
+Upcoming Events
+</string>
+    <string name="events_speaker">
+Events/Speaker Sessions
+</string>
 </resources>
