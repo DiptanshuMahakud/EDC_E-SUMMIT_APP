@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.GridView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.appcompat.widget.Toolbar
 import com.event.edc.databinding.ActivityMainBinding
@@ -20,6 +21,8 @@ class EventsActivity : AppCompatActivity() {
 
 
     lateinit var valo_info_button : Button
+    lateinit var b_plan_info_button:Button
+    lateinit var storage_wars_info_button:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.events)
@@ -29,11 +32,8 @@ class EventsActivity : AppCompatActivity() {
         val toolbar : MaterialToolbar
         toolbar = findViewById(R.id.material_toolbar)
 
-       /**valo_info_button = findViewById(R.id.valo_button)
-        valo_info_button.setOnClickListener {
-            val intent = Intent(this, valo_description::class.java)
-            startActivity(intent)
-        }**/
+        /*********************************************
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)**/
 
 
 
@@ -48,9 +48,49 @@ class EventsActivity : AppCompatActivity() {
             return@setOnMenuItemClickListener true
         }
 
+        valo_info_button = findViewById(R.id.valo_button)
+        valo_info_button.setOnClickListener {
+
+            val intent = Intent(this, activity_event_1::class.java)
+            startActivity(intent)
+        }
+
+        b_plan_info_button= findViewById(R.id.b_plan_button)
+        b_plan_info_button.setOnClickListener {
+
+            val intent = Intent(this , activity_event_2::class.java)
+            startActivity(intent)
+        }
+
+
+        storage_wars_info_button= findViewById(R.id.storage_wars_button)
+        storage_wars_info_button.setOnClickListener {
+
+            val intent = Intent(this, activity_event_3::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
 
     }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+            // Add other cases if needed
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+
+
+
 
 
 /**
