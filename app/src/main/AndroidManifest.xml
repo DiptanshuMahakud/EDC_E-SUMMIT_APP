@@ -12,12 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDC"
         tools:targetApi="31">
-        <activity
-            android:name=".storage_wars_description"
-            android:exported="false" />
-        <activity
-            android:name=".valo_description"
-            android:exported="false" />
+
+
         <activity
             android:name=".EventsActivity"
             android:exported="false" />
