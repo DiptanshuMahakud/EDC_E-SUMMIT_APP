@@ -53,6 +53,7 @@ class REgistration : AppCompatActivity() {
             }
     }
 
+
     override fun onStart() {
         super.onStart()
         val user = auth.currentUser
